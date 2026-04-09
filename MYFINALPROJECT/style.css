@@ -1,0 +1,88 @@
+:root{
+  --brand:#7b1e2b;
+  --brand-dark:#641822;
+  --bg:#f7f2ef;
+  --card:#ffffff;
+  --muted:#8b8b8b;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  background: var(--bg);
+  color:#222;
+}
+
+/* ===== Topbar ===== */
+.topbar{
+  background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+  color:#fff;
+  padding:16px 0;
+}
+
+.topbar .title{
+  font-size:22px;
+  font-weight:700;
+}
+
+/* ===== Main Center Layout ===== */
+.main-wrapper{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 15px;
+}
+
+/* ===== Card Design ===== */
+.card-ui{
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  max-width:520px;
+}
+
+.card-ui:hover{
+  transform:translateY(-6px);
+  box-shadow: 0 25px 50px rgba(17, 17, 17, 0.12);
+}
+
+.card-ui h5{
+  color:var(--brand);
+  font-weight:700;
+  margin-bottom:25px;
+  padding-bottom:10px;
+  border-bottom:2px solid var(--brand);
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* ===== Form Styling ===== */
+.form-label{
+  font-weight:600;
+  margin-bottom:6px;
+}
+
+.form-control{
+  border-radius:10px;
+  padding:10px 12px;
+  border:1px solid #ddd;
+  transition:0.2s;
+}
+
+.form-control:focus{
+  border-color:var(--brand);
+  box-shadow:0 0 0 2px rgba(123,30,43,0.15);
+}
+
+/* ===== Button ===== */
+.btn-brand{
+  background:var(--brand);
+  color:#fff;
+  
+}
+
